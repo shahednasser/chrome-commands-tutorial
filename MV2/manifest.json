@@ -1,0 +1,33 @@
+{
+    "name": "Commands",
+    "version": "0.0.1",
+    "description": "Assign Keyboard Commands",
+    "manifest_version": 2,
+    "background": {
+    	"scripts": ["background.js"],
+    	"persistent": false
+  	},
+    "permissions": ["activeTab", "tabs"],
+    "browser_action": {},
+    "icons": {
+        "16": "/assets/icon-16.png",
+        "32": "/assets/icon-32.png",
+        "48": "/assets/icon-48.png",
+        "128": "/assets/icon-128.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": "Ctrl+Shift+L",
+            "description": "Toggle dark body"
+        },
+        "hello": {
+            "suggested_key": "Ctrl+Shift+P",
+            "description": "Say Hello"
+        },
+        "date": {
+            "suggested_key": "Ctrl+Shift+8",
+            "description": "Show Date",
+            "global": true
+        }
+    }
+}
